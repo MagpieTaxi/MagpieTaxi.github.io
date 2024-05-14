@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magpie's Website</title>
+        <link rel="stylesheet" href="IndexStyle.css">
+    </head>
+    <script>
+        var rainbowMode = false;
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+
+        function rainbow() {
+            if (rainbowMode == false) {
+                rainbowMode = !rainbowMode;
+                function executeRainbow() {
+                    var boxes = document.getElementsByClassName("GridBlock")
+                    for (var i = 0; i < boxes.length; i++) {
+                        var color = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")"
+                        boxes[i].style.setProperty("background-color", color);
+                    }   
+                    setTimeout(executeRainbow,500)
+                }
+                executeRainbow()
+            }
+        }
+    </script>
+    <body>
+        <div id="Body">
+            <div id="Socials" class="GridBlock">
+                <a href="https://discord.gg/N7rCxbYs73"><img src="Images/logo_discord.png" style="filter: brightness(0);"></a>
+                <a href="https://www.roblox.com/users/588326204/profile"><img src="Images/logo_roblox.png" style="filter: brightness(0);"></a>
+                <a href="https://www.youtube.com/channel/UC3XHA8RiNJzTM-LMp7p7gEw"><img src="Images/logo_youtube.png" style="filter: brightness(0);"></a>
+            </div>
+            <div id="Projects" class="GridBlock">
+                <a><h2>Adrenaline</h2></a>
+                <p>(COMING SOON)</p>
+            </div>
+            <div id="Pages" class="GridBlock"></div>
+            <div id="MOTD" class="GridBlock">
+                <center>
+                    <h2>Message of the Day:</h2>
+                    <p>i hate website development so much oh my god</p>
+                </center>
+            </div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock"></div>
+            <div class="GridBlock">
+                <center>
+                    <button onClick="rainbow()">rainbow mode</button>
+                    <p>WARNING: rainbow mode can NOT be disabled and you will have to refresh the page lmao :3</p>
+                </center>
+            </div>
+            <img id="pagedoll" src="Images/pagedoll.gif">
+        </div>
+    </body>
+</html>
