@@ -21,8 +21,9 @@
                     for (var i = 0; i < boxes.length; i++) {
                         var color = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")"
                         boxes[i].style.setProperty("background-color", color);
+                        boxes[i].style.setProperty("transition", "background-color 0s");
                     }   
-                    setTimeout(executeRainbow,500)
+                    setTimeout(executeRainbow,466)
                 }
                 executeRainbow()
             }
@@ -54,7 +55,9 @@
             <div class="GridBlock"></div>
             <div class="GridBlock"></div>
             <div class="GridBlock"></div>
-            <div class="GridBlock"></div>
+            <div class="GridBlock">
+                <a href="Pages/Personal/aboutme.html"><h2 style="text-align: center;">About me</h2></a>
+            </div>
             <div class="GridBlock"></div>
             <div class="GridBlock"></div>
             <div class="GridBlock"></div>
