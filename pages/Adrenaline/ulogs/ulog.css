@@ -1,0 +1,70 @@
+:root {
+    --primary: rgb(255,0,0);
+    --secondary: rgb(255, 255, 255);
+    --tertiary: rgb(23, 24, 32);
+    --quaternary: rgb(15, 14, 20);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --shadow2: rgba(0,0,0,0.8);
+}
+
+h1,h2,h3 {
+    color: var(--primary);
+    font-family: 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h4,h5,h6,p {
+    color: var(--secondary);
+    font-family: 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p {
+    text-align: left;
+    margin-left: 5%;
+}
+#additions {
+    color: lime;
+}
+#changes {
+    color: aqua;
+}
+#removals {
+    color: red;
+}
+#fixes {
+    color: yellow;
+}
+
+body {
+    background-color: var(--quaternary);
+}
+#body2 {
+    background-color: var(--tertiary);
+    max-width: 960px;
+    min-width: 750px;
+    min-height: 100%;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.containerparent {
+    background-color: var(--shadow);
+    width: 90%;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    border-radius: 20px 20px;
+}
+.containerhead {
+    width: 100%;
+    padding-top: 2px;
+}
+.containerbody {
+    background-color: var(--shadow);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
