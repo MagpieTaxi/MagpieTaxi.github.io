@@ -1,0 +1,68 @@
+:root {
+    --primary: rgb(183, 0, 255);
+    --secondary: rgba(183, 0, 255, 0.8);
+    --hovercolor: rgb(255, 255, 255);
+    --hovercolor2: rgba(183,0,255,0.4)
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Arial Bold','Arial';
+}
+
+#Body {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 98vw;
+    height: 96vh;
+    left: 0.6vw;
+    top:1.5vh;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    display: grid;
+    border: 8px solid rgb(0, 0, 0);
+}
+.GridBlock:nth-child(odd) {
+    background-color: var(--primary);
+}
+.GridBlock:nth-child(even) {
+    background-color: var(--secondary);
+}
+.GridBlock {
+    transition: background-color 1s;
+}
+.GridBlock:hover {
+    background-color: var(--hovercolor);
+    transition: background-color 0.2s;
+}
+
+#Socials {
+    height: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+img {
+    display: grid;
+    grid-column: auto;
+    max-height: 50%;
+    max-width: 80%;
+}
+
+#Projects {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+}
+#Projects/h2 {
+    max-height: 100%;
+}
+#MOTD {
+    padding: 0px 5px 0px 5px;
+}
+#pagedoll {
+    grid-row: 4;
+    grid-column: 5;
+    justify-self: end;
+    align-self: end;
+}
