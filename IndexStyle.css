@@ -66,3 +66,9 @@ img {
     justify-self: end;
     align-self: end;
 }
+a:visited {
+    color: pink;
+}
+a:link {
+    color: aqua;
+}
